@@ -1,11 +1,11 @@
-import { Router } from "express";
+const express  = require("express");
 
 const axios = require("axios");
 let cheerio = require("cheerio");
 // let data = [];
 // let iconv = require("iconv-lite");
 // const puppeteer = require("puppeteer");
-const routes = new Router();
+const routes = express.Router();
 
 routes.get("/", (req, res) => {
   axios.get("https://www.tricae.com.br/brinquedos/?page=1").then(response => {
@@ -63,4 +63,4 @@ routes.get("/", (req, res) => {
   //   res.json(value)
   // });
 });
-export default routes;
+module.exports =  routes;
