@@ -1,7 +1,6 @@
 {
   "name": "api-produtos",
   "version": "0.1.0",
-  "private": true,
   "main": "serve.js",
   "dependencies": {
     "axios": "^0.19.2",
